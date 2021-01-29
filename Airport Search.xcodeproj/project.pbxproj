@@ -23,6 +23,12 @@
 		7C95E71325C39583001C99E4 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71225C39583001C99E4 /* MapPresenter.swift */; };
 		7C95E71825C3958A001C99E4 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71725C3958A001C99E4 /* MapRouter.swift */; };
 		7C95E71D25C3959A001C99E4 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71C25C3959A001C99E4 /* MapInteractor.swift */; };
+		7C95E72525C3C3ED001C99E4 /* TabBarContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E72425C3C3ED001C99E4 /* TabBarContract.swift */; };
+		7C95E72A25C3C3F7001C99E4 /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E72925C3C3F7001C99E4 /* TabBarPresenter.swift */; };
+		7C95E72F25C3C3FE001C99E4 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E72E25C3C3FE001C99E4 /* TabBarRouter.swift */; };
+		7C95E73425C3C408001C99E4 /* TabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E73325C3C408001C99E4 /* TabBarInteractor.swift */; };
+		7C95E73925C3C417001C99E4 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E73825C3C417001C99E4 /* TabBarViewController.swift */; };
+		7C95E74025C3D7BB001C99E4 /* TabBarViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E73F25C3D7BB001C99E4 /* TabBarViewProtocol.swift */; };
 		7CC91E6B25C38A2D0051783F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E6A25C38A2D0051783F /* HomePresenter.swift */; };
 		7CC91E7025C38A390051783F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E6F25C38A390051783F /* HomeRouter.swift */; };
 		7CC91E7525C38A4B0051783F /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E7425C38A4B0051783F /* HomeInteractor.swift */; };
@@ -69,6 +75,12 @@
 		7C95E71225C39583001C99E4 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		7C95E71725C3958A001C99E4 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
 		7C95E71C25C3959A001C99E4 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		7C95E72425C3C3ED001C99E4 /* TabBarContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarContract.swift; sourceTree = "<group>"; };
+		7C95E72925C3C3F7001C99E4 /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
+		7C95E72E25C3C3FE001C99E4 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
+		7C95E73325C3C408001C99E4 /* TabBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarInteractor.swift; sourceTree = "<group>"; };
+		7C95E73825C3C417001C99E4 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		7C95E73F25C3D7BB001C99E4 /* TabBarViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewProtocol.swift; sourceTree = "<group>"; };
 		7CC91E6A25C38A2D0051783F /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		7CC91E6F25C38A390051783F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		7CC91E7425C38A4B0051783F /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -149,6 +161,7 @@
 		7C4D082A25C385620050031B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				7C95E73E25C3D7AC001C99E4 /* Protocols */,
 				7C4D082C25C385780050031B /* Entities */,
 				7C4D082B25C385700050031B /* Endpoints */,
 			);
@@ -237,9 +250,22 @@
 			path = App;
 			sourceTree = "<group>";
 		};
+		7C95E73E25C3D7AC001C99E4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7C95E73F25C3D7BB001C99E4 /* TabBarViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		7CC91E7F25C38A880051783F /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				7C95E72425C3C3ED001C99E4 /* TabBarContract.swift */,
+				7C95E72925C3C3F7001C99E4 /* TabBarPresenter.swift */,
+				7C95E72E25C3C3FE001C99E4 /* TabBarRouter.swift */,
+				7C95E73325C3C408001C99E4 /* TabBarInteractor.swift */,
+				7C95E73825C3C417001C99E4 /* TabBarViewController.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -376,16 +402,22 @@
 				7C4EC81E25C21D9200DC5BF3 /* HomeViewController.swift in Sources */,
 				7C95E71325C39583001C99E4 /* MapPresenter.swift in Sources */,
 				7C95E71825C3958A001C99E4 /* MapRouter.swift in Sources */,
+				7C95E72525C3C3ED001C99E4 /* TabBarContract.swift in Sources */,
+				7C95E73925C3C417001C99E4 /* TabBarViewController.swift in Sources */,
 				7CC91E8125C38B450051783F /* HomeContract.swift in Sources */,
 				7C95E70E25C39576001C99E4 /* MapContract.swift in Sources */,
 				7CC91E7525C38A4B0051783F /* HomeInteractor.swift in Sources */,
 				7C4035C325C24C3500830E15 /* MapRootView.swift in Sources */,
+				7C95E72A25C3C3F7001C99E4 /* TabBarPresenter.swift in Sources */,
 				7C95E71D25C3959A001C99E4 /* MapInteractor.swift in Sources */,
 				7C4035DE25C24F2F00830E15 /* UIViewExtensions.swift in Sources */,
 				7C4035D925C24E4000830E15 /* HomeRootView.swift in Sources */,
 				7C4035D125C24E1900830E15 /* MapExtensions.swift in Sources */,
 				7C4EC81A25C21D9200DC5BF3 /* AppDelegate.swift in Sources */,
+				7C95E72F25C3C3FE001C99E4 /* TabBarRouter.swift in Sources */,
+				7C95E74025C3D7BB001C99E4 /* TabBarViewProtocol.swift in Sources */,
 				7CC91E6B25C38A2D0051783F /* HomePresenter.swift in Sources */,
+				7C95E73425C3C408001C99E4 /* TabBarInteractor.swift in Sources */,
 				7C4035CB25C24D9200830E15 /* MapViewController.swift in Sources */,
 				7C4EC81C25C21D9200DC5BF3 /* SceneDelegate.swift in Sources */,
 				7CC91E7025C38A390051783F /* HomeRouter.swift in Sources */,

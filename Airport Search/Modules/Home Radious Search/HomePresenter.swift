@@ -19,6 +19,7 @@ final class HomePresenter: ViewToPresenterHomeProtocol {
     func viewDidLoad() {
         print("Presenter is being notified that the View was loaded.")
         interactor?.loadQuotes()
+        view?.updateRadiosValue(with: 10)
     }
     
     @objc func valueSelected(_ sender: UISlider) {

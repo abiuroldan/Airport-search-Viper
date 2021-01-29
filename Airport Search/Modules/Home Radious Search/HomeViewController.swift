@@ -20,10 +20,12 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        rootView.searchButton.addTarget(self, action: #selector(goToMapAction), for: .touchUpInside)
         presenter?.viewDidLoad()
-        
+        addTargets()
+    }
+    
+    private func addTargets() {
+        rootView.searchButton.addTarget(self, action: #selector(goToMapAction), for: .touchUpInside)
         rootView.slider.addTarget(presenter, action: #selector(presenter?.valueSelected(_:)), for: .valueChanged)
     }
 

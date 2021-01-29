@@ -17,6 +17,7 @@ protocol ViewToPresenterMapProtocol: class {
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewMapProtocol: class {
+//    func setVCTitle(_ title: String)
     func onGetImageFromURLSuccess()
     func onGetImageFromURLFailure()
 }
