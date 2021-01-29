@@ -29,7 +29,7 @@ final class MapRouter: PresenterToRouterMapProtocol, TabBarViewProtocol {
     
     func configuredViewController() -> UIViewController { return UIViewController()}
     
-    func configuredViewController<T>(with value: T) -> UIViewController {
+    func configuredViewController<T>(with value: T) -> UIViewController? {
         print("MapSearchRouter creates the MapAirportsController module.")
         
         let viewController = MapViewController()

@@ -36,5 +36,5 @@ final class AirportListRouter: PresenterToRouterAirportListProtocol, TabBarViewP
         return airportVC
     }
     
-    func configuredViewController<T>(with value: T) -> UIViewController {return UIViewController()}
+    func configuredViewController<T>(with value: T) -> UIViewController? {return nil}
 }

@@ -15,7 +15,7 @@ final class AirportListPresenter: ViewToPresenterAirportListProtocol {
     var router: PresenterToRouterAirportListProtocol?
     
     func viewDidload() {
-        
+        print("The airport screen loaded")
     }
 }
 

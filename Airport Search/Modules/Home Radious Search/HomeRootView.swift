@@ -73,7 +73,7 @@ final class HomeRootView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         styleView()
-        subviews()
+        addSubviews()
         addConstraints()
     }
     
@@ -81,7 +81,7 @@ final class HomeRootView: UIView {
         backgroundColor = Colors.grayAppColor
     }
     
-    private func subviews() {
+    private func addSubviews() {
         addSubview(titleLabel)
         addSubview(subtitleLabel)
         addSubview(kmLabel)

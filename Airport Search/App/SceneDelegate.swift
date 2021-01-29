@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowsScene)
         window?.windowScene = windowsScene
         window?.makeKeyAndVisible()
-        window?.rootViewController = HomeRouter.createModule() //UINavigationController(rootViewController: HomeViewController())
+        window?.rootViewController = HomeRouter.createModule()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

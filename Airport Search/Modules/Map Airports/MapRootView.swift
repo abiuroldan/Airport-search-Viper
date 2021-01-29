@@ -17,9 +17,20 @@ final class MapRootView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        styleView()
+        addSubviews()
+        addConstraints()
+    }
+    
+    private func styleView() {
         backgroundColor = .white
-        
+    }
+    
+    private func addSubviews() {
         addSubview(mapView)
+    }
+    
+    private func addConstraints() {
         mapView.fullScreen()
     }
     

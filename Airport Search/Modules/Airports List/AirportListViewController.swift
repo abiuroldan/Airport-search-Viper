@@ -7,19 +7,7 @@
 
 import UIKit
 
-class CustomController: UIViewController {
-    
-    public init() {
-        super.init(nibName: nil, bundle: nil)
-        parent?.title = title
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-}
-
-final class AirportListViewController: CustomController {
+final class AirportListViewController: UIViewController {
     
     // MARK: Properties
     let rootView = AirportListRootView()
@@ -31,6 +19,7 @@ final class AirportListViewController: CustomController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.viewDidload()
     }
 }
 

@@ -26,8 +26,10 @@ final class TabBarRouter: PresenterToRouterTabBarProtocol {
             tabBarItem.title = view.tabTitle
             tabBarItem.image = view.tabIcon
             let vc = index == 0 ? view.configuredViewController(with: radious) : view.configuredViewController()
-            vc.tabBarItem = tabBarItem
-            viewControllers.append(vc)
+            vc?.tabBarItem = tabBarItem
+            if let controller = vc {
+                viewControllers.append(controller)
+            }
         }
         
         tabBar.viewControllers = viewControllers
