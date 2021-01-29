@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4035C325C24C3500830E15 /* MapRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4035C225C24C3500830E15 /* MapRootView.swift */; };
+		7C4035CB25C24D9200830E15 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4035CA25C24D9200830E15 /* MapViewController.swift */; };
+		7C4035D125C24E1900830E15 /* MapExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4035D025C24E1900830E15 /* MapExtensions.swift */; };
+		7C4035D925C24E4000830E15 /* HomeRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4035D825C24E4000830E15 /* HomeRootView.swift */; };
+		7C4035DE25C24F2F00830E15 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4035DD25C24F2F00830E15 /* UIViewExtensions.swift */; };
 		7C4EC81A25C21D9200DC5BF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC81925C21D9200DC5BF3 /* AppDelegate.swift */; };
 		7C4EC81C25C21D9200DC5BF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC81B25C21D9200DC5BF3 /* SceneDelegate.swift */; };
-		7C4EC81E25C21D9200DC5BF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC81D25C21D9200DC5BF3 /* ViewController.swift */; };
-		7C4EC82125C21D9200DC5BF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4EC81F25C21D9200DC5BF3 /* Main.storyboard */; };
+		7C4EC81E25C21D9200DC5BF3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC81D25C21D9200DC5BF3 /* HomeViewController.swift */; };
 		7C4EC82325C21D9600DC5BF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C4EC82225C21D9600DC5BF3 /* Assets.xcassets */; };
 		7C4EC82625C21D9600DC5BF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C4EC82425C21D9600DC5BF3 /* LaunchScreen.storyboard */; };
 		7C4EC83125C21D9700DC5BF3 /* Airport_SearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC83025C21D9700DC5BF3 /* Airport_SearchTests.swift */; };
 		7C4EC83C25C21D9700DC5BF3 /* Airport_SearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C4EC83B25C21D9700DC5BF3 /* Airport_SearchUITests.swift */; };
+		7C95E70E25C39576001C99E4 /* MapContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E70D25C39576001C99E4 /* MapContract.swift */; };
+		7C95E71325C39583001C99E4 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71225C39583001C99E4 /* MapPresenter.swift */; };
+		7C95E71825C3958A001C99E4 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71725C3958A001C99E4 /* MapRouter.swift */; };
+		7C95E71D25C3959A001C99E4 /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C95E71C25C3959A001C99E4 /* MapInteractor.swift */; };
+		7CC91E6B25C38A2D0051783F /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E6A25C38A2D0051783F /* HomePresenter.swift */; };
+		7CC91E7025C38A390051783F /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E6F25C38A390051783F /* HomeRouter.swift */; };
+		7CC91E7525C38A4B0051783F /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E7425C38A4B0051783F /* HomeInteractor.swift */; };
+		7CC91E8125C38B450051783F /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC91E8025C38B450051783F /* HomeContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C4035C225C24C3500830E15 /* MapRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRootView.swift; sourceTree = "<group>"; };
+		7C4035CA25C24D9200830E15 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7C4035D025C24E1900830E15 /* MapExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapExtensions.swift; sourceTree = "<group>"; };
+		7C4035D825C24E4000830E15 /* HomeRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootView.swift; sourceTree = "<group>"; };
+		7C4035DD25C24F2F00830E15 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		7C4EC81625C21D9200DC5BF3 /* Airport Search.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Airport Search.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4EC81925C21D9200DC5BF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C4EC81B25C21D9200DC5BF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7C4EC81D25C21D9200DC5BF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7C4EC82025C21D9200DC5BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C4EC81D25C21D9200DC5BF3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C4EC82225C21D9600DC5BF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C4EC82525C21D9600DC5BF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C4EC82725C21D9600DC5BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +65,14 @@
 		7C4EC83725C21D9700DC5BF3 /* Airport SearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airport SearchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C4EC83B25C21D9700DC5BF3 /* Airport_SearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport_SearchUITests.swift; sourceTree = "<group>"; };
 		7C4EC83D25C21D9700DC5BF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C95E70D25C39576001C99E4 /* MapContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContract.swift; sourceTree = "<group>"; };
+		7C95E71225C39583001C99E4 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		7C95E71725C3958A001C99E4 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		7C95E71C25C3959A001C99E4 /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		7CC91E6A25C38A2D0051783F /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		7CC91E6F25C38A390051783F /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		7CC91E7425C38A4B0051783F /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		7CC91E8025C38B450051783F /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +100,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C4035CF25C24DFC00830E15 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7C4EC82225C21D9600DC5BF3 /* Assets.xcassets */,
+				7C4035D025C24E1900830E15 /* MapExtensions.swift */,
+				7C4035DD25C24F2F00830E15 /* UIViewExtensions.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C4D082725C3851C0050031B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7CC91E7F25C38A880051783F /* TabBar */,
+				7C4D082825C3852B0050031B /* Home Radious Search */,
+				7C4D082925C385450050031B /* Map Airports */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7C4D082825C3852B0050031B /* Home Radious Search */ = {
+			isa = PBXGroup;
+			children = (
+				7CC91E8025C38B450051783F /* HomeContract.swift */,
+				7C4EC81D25C21D9200DC5BF3 /* HomeViewController.swift */,
+				7C4035D825C24E4000830E15 /* HomeRootView.swift */,
+				7CC91E6A25C38A2D0051783F /* HomePresenter.swift */,
+				7CC91E6F25C38A390051783F /* HomeRouter.swift */,
+				7CC91E7425C38A4B0051783F /* HomeInteractor.swift */,
+			);
+			path = "Home Radious Search";
+			sourceTree = "<group>";
+		};
+		7C4D082925C385450050031B /* Map Airports */ = {
+			isa = PBXGroup;
+			children = (
+				7C95E70D25C39576001C99E4 /* MapContract.swift */,
+				7C4035C225C24C3500830E15 /* MapRootView.swift */,
+				7C4035CA25C24D9200830E15 /* MapViewController.swift */,
+				7C95E71225C39583001C99E4 /* MapPresenter.swift */,
+				7C95E71725C3958A001C99E4 /* MapRouter.swift */,
+				7C95E71C25C3959A001C99E4 /* MapInteractor.swift */,
+			);
+			path = "Map Airports";
+			sourceTree = "<group>";
+		};
+		7C4D082A25C385620050031B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				7C4D082C25C385780050031B /* Entities */,
+				7C4D082B25C385700050031B /* Endpoints */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		7C4D082B25C385700050031B /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		7C4D082C25C385780050031B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7C4D083325C385AB0050031B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				7C4EC82425C21D9600DC5BF3 /* LaunchScreen.storyboard */,
+				7C4EC82725C21D9600DC5BF3 /* Info.plist */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		7C4EC80D25C21D9200DC5BF3 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +201,11 @@
 		7C4EC81825C21D9200DC5BF3 /* Airport Search */ = {
 			isa = PBXGroup;
 			children = (
-				7C4EC81925C21D9200DC5BF3 /* AppDelegate.swift */,
-				7C4EC81B25C21D9200DC5BF3 /* SceneDelegate.swift */,
-				7C4EC81D25C21D9200DC5BF3 /* ViewController.swift */,
-				7C4EC81F25C21D9200DC5BF3 /* Main.storyboard */,
-				7C4EC82225C21D9600DC5BF3 /* Assets.xcassets */,
-				7C4EC82425C21D9600DC5BF3 /* LaunchScreen.storyboard */,
-				7C4EC82725C21D9600DC5BF3 /* Info.plist */,
+				7C8FFE1425C3843C0007F46E /* App */,
+				7C4D082725C3851C0050031B /* Modules */,
+				7C4D082A25C385620050031B /* Common */,
+				7C4035CF25C24DFC00830E15 /* Resources */,
+				7C4D083325C385AB0050031B /* Supporting files */,
 			);
 			path = "Airport Search";
 			sourceTree = "<group>";
@@ -126,6 +226,22 @@
 				7C4EC83D25C21D9700DC5BF3 /* Info.plist */,
 			);
 			path = "Airport SearchUITests";
+			sourceTree = "<group>";
+		};
+		7C8FFE1425C3843C0007F46E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7C4EC81925C21D9200DC5BF3 /* AppDelegate.swift */,
+				7C4EC81B25C21D9200DC5BF3 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7CC91E7F25C38A880051783F /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +349,6 @@
 			files = (
 				7C4EC82625C21D9600DC5BF3 /* LaunchScreen.storyboard in Resources */,
 				7C4EC82325C21D9600DC5BF3 /* Assets.xcassets in Resources */,
-				7C4EC82125C21D9200DC5BF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +373,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4EC81E25C21D9200DC5BF3 /* ViewController.swift in Sources */,
+				7C4EC81E25C21D9200DC5BF3 /* HomeViewController.swift in Sources */,
+				7C95E71325C39583001C99E4 /* MapPresenter.swift in Sources */,
+				7C95E71825C3958A001C99E4 /* MapRouter.swift in Sources */,
+				7CC91E8125C38B450051783F /* HomeContract.swift in Sources */,
+				7C95E70E25C39576001C99E4 /* MapContract.swift in Sources */,
+				7CC91E7525C38A4B0051783F /* HomeInteractor.swift in Sources */,
+				7C4035C325C24C3500830E15 /* MapRootView.swift in Sources */,
+				7C95E71D25C3959A001C99E4 /* MapInteractor.swift in Sources */,
+				7C4035DE25C24F2F00830E15 /* UIViewExtensions.swift in Sources */,
+				7C4035D925C24E4000830E15 /* HomeRootView.swift in Sources */,
+				7C4035D125C24E1900830E15 /* MapExtensions.swift in Sources */,
 				7C4EC81A25C21D9200DC5BF3 /* AppDelegate.swift in Sources */,
+				7CC91E6B25C38A2D0051783F /* HomePresenter.swift in Sources */,
+				7C4035CB25C24D9200830E15 /* MapViewController.swift in Sources */,
 				7C4EC81C25C21D9200DC5BF3 /* SceneDelegate.swift in Sources */,
+				7CC91E7025C38A390051783F /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +424,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7C4EC81F25C21D9200DC5BF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C4EC82025C21D9200DC5BF3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7C4EC82425C21D9600DC5BF3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,7 +558,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 862ZQ8XD63;
-				INFOPLIST_FILE = "Airport Search/Info.plist";
+				INFOPLIST_FILE = "Airport Search/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +577,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 862ZQ8XD63;
-				INFOPLIST_FILE = "Airport Search/Info.plist";
+				INFOPLIST_FILE = "Airport Search/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
