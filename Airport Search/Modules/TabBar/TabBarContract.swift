@@ -31,5 +31,5 @@ protocol InteractorToPresenterTabBarProtocol: class {
 
 // MARK: Router Input (Presenter -> Router)
 protocol PresenterToRouterTabBarProtocol: class {
-    static func createTabBarModule(with views: [TabBarViewProtocol]) -> UITabBarController
+    static func createTabBarModule(radious: CGFloat, with views: [TabBarViewProtocol]) -> UITabBarController
 }

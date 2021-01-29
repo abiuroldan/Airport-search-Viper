@@ -26,22 +26,16 @@ final class HomeRouter: PresenterToRouterHomeProtocol {
     
     func pushToMapAirportsSearch(on view: PresenterToViewHomeProtocol, with radious: CGFloat) {
         print("HomeRouter is instructed to push MapAirportsViewController onto the navigation stack.")
-//        let quoteDetailViewController = MapRouter.createModule(with: radious)
-//
-//        let viewController = view as! HomeViewController
-//                viewController.navigationController?
-//                    .pushViewController(quoteDetailViewController, animated: true)
         
         var wireframes = [TabBarViewProtocol]()
 
         let firstModuleWireFrame : PresenterToRouterMapProtocol = MapRouter()
         wireframes.append(firstModuleWireFrame as! TabBarViewProtocol)
         
-//        let secondModuleWireFrame: SecondModuleWireFrameProtocol = SecondModuleWireFrame()
-//
-//        wireframes.append(secondModuleWireFrame as! TabBarViewProtocol)
+        let secondModuleWireFrame: PresenterToRouterAirportListProtocol = AirportListRouter()
+        wireframes.append(secondModuleWireFrame as! TabBarViewProtocol)
         
-        let tabBarViewController = TabBarRouter.createTabBarModule(with: wireframes)
+        let tabBarViewController = TabBarRouter.createTabBarModule(radious: radious, with: wireframes)
         
         let viewController = view as! HomeViewController
         viewController.navigationController?

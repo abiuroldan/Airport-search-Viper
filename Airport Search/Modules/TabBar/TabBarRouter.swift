@@ -8,7 +8,7 @@
 import UIKit
 
 final class TabBarRouter: PresenterToRouterTabBarProtocol {
-    static func createTabBarModule(with views: [TabBarViewProtocol]) -> UITabBarController {
+    static func createTabBarModule(radious: CGFloat, with views: [TabBarViewProtocol]) -> UITabBarController {
         
         let tabBar = TabBarViewController()
         let presenter: ViewToPresenterTabBarProtocol & InteractorToPresenterTabBarProtocol = TabBarPresenter()
@@ -21,14 +21,11 @@ final class TabBarRouter: PresenterToRouterTabBarProtocol {
         
         var viewControllers = [UIViewController]()
         
-        for view in views {
-            print(view.tabTitle)
+        for (index, view) in views.enumerated() {
             let tabBarItem = UITabBarItem()
             tabBarItem.title = view.tabTitle
             tabBarItem.image = view.tabIcon
-            let vc = view.configuredViewController()
-            vc.title = view.tabTitle
-            print(vc.navigationItem)
+            let vc = index == 0 ? view.configuredViewController(with: radious) : view.configuredViewController()
             vc.tabBarItem = tabBarItem
             viewControllers.append(vc)
         }

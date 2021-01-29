@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 import MapKit
 
-final class MapViewController: UIViewController {
+final class MapViewController: CustomController {
     
     // MARK: - Properties
     let rootView = MapRootView()

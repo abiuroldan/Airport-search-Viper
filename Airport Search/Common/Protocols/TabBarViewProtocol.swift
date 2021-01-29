@@ -13,4 +13,5 @@ protocol TabBarViewProtocol {
     var tabTitle: String { get }
     
     func configuredViewController() -> UIViewController
+    func configuredViewController<T>(with value: T) -> UIViewController
 }

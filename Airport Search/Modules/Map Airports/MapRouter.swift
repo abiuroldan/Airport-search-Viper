@@ -10,7 +10,7 @@ import UIKit
 final class MapRouter: PresenterToRouterMapProtocol, TabBarViewProtocol {
     
     var tabTitle: String = "MapView"
-    var tabIcon:UIImage = UIImage(named:"Module1Image")!
+    var tabIcon: UIImage = UIImage(named:"LocationPin")!
     
     static func createModule(with radious: CGFloat) -> UIViewController {
         print("MapSearchRouter creates the MapAirportsController module.")
@@ -27,7 +27,9 @@ final class MapRouter: PresenterToRouterMapProtocol, TabBarViewProtocol {
         return viewController
     }
     
-    func configuredViewController() -> UIViewController {
+    func configuredViewController() -> UIViewController { return UIViewController()}
+    
+    func configuredViewController<T>(with value: T) -> UIViewController {
         print("MapSearchRouter creates the MapAirportsController module.")
         
         let viewController = MapViewController()
@@ -37,7 +39,7 @@ final class MapRouter: PresenterToRouterMapProtocol, TabBarViewProtocol {
         viewController.presenter?.router = MapRouter()
         viewController.presenter?.view = viewController
         viewController.presenter?.interactor = MapInteractor()
-//        viewController.presenter?.interactor?.radious = radious
+        viewController.presenter?.interactor?.radious = value as? CGFloat ?? 0.1
         
         return viewController
     }
