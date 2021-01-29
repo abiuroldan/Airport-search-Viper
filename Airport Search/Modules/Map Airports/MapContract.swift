@@ -17,7 +17,6 @@ protocol ViewToPresenterMapProtocol: class {
 
 // MARK: View Output (Presenter -> View)
 protocol PresenterToViewMapProtocol: class {
-//    func setVCTitle(_ title: String)
     func onGetImageFromURLSuccess()
     func onGetImageFromURLFailure()
 }
@@ -25,7 +24,6 @@ protocol PresenterToViewMapProtocol: class {
 // MARK: Interactor Input (Presenter -> Interactor)
 protocol PresenterToInteractorMapProtocol: class {
     var presenter: InteractorToPresenterMapProtocol? { get set }
-    
     var radious: CGFloat? { get set }
     
     func getImageDataFromURL()
